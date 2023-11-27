@@ -1,15 +1,4 @@
-import subprocess
-import sys
-
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-# Instalar las dependencias necesarias
-install("transformers")
-install("streamlit")
-install("requests")
-install("virustotal-api")
-install("torch")
+# chatbot_app.py
 
 import streamlit as st
 from transformers import AutoTokenizer, pipeline
@@ -17,7 +6,6 @@ import requests
 import re
 import virustotal_python
 import torch
-import os
 
 class Chatbot:
     def __init__(self, modelo, nvd_api_key, vt_api_key):
