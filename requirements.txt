@@ -1,5 +1,5 @@
-streamlit==1.14.0
+streamlit
 transformers
-requests==2.26.0
-virustotal-api==0.3.1
-torch==1.10.0
+requests
+virustotal-api
+torch
