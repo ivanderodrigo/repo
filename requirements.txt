@@ -1,5 +1,5 @@
 streamlit
 transformers
 requests
-virustotal-api
+virustotal-api=1.1.11
 torch
