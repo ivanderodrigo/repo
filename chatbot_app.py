@@ -1,3 +1,16 @@
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# Instalar las dependencias necesarias
+install("transformers")
+install("streamlit")
+install("requests")
+install("virustotal-api")
+install("torch")
+
 import streamlit as st
 from transformers import AutoTokenizer, pipeline
 import requests
